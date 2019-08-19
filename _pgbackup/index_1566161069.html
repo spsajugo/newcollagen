@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>New page</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navbar-fixed-top">
+            <!--left navbar-->
+            <div>
+                <p>ПЕРВЫЙ ЖИВОЙ КОЛЛАГЕН</p> 
+            </div>
+            <!--center navbar-->
+            <div> 
+                <p>8 (914) 714 52 09 </p>
+                <p>8 (924) 333 83 87 </p> 
+            </div>
+            <!--right navbar : menu button-->
+            <div id="myNav" class="overlay">
+                <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+            <script>
+						function openNav() {
+ 				 		document.getElementById("myNav").style.height = "100%";
+						}
+						function closeNav() {
+						document.getElementById("myNav").style.height = "0%";
+						}
+					</script>
+            <!--end navigation top-->             
+        </div>         
+        <img src="images/olga1440x530_poster.png" class="pageOlga"/>
+        <img src="images/cartoon_potret.png" class="pageCartoon"/>
+        <div class="TextUnderCartoon">
+            <p>
+                test </p>
+        </div>
+    </body>
+</html>

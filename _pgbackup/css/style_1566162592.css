@@ -1,0 +1,114 @@
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #1E96A4;
+    color: white;
+    margin-top: 0 auto;
+    padding: 10px;
+}
+
+/*how to format text and menu position*/
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/*about the menu button*/
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 60px;
+    bottom: 20px;
+    left: 20px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.pageOlga {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    margin-top: 170px;
+    padding: 5px;
+    width: 100%;
+}
+
+.pageCartoon {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    background-color: transparent;
+    color: white;
+    margin-top: 15%;
+    margin-left: 1%;
+    padding: 10px;
+    width: 20%;
+    max-width: 15%;
+}
+
+.TextUnderCartoon {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    background-color: transparent;
+    color: white;
+    margin-top: 30%;
+    margin-left: 60px;
+    padding: 10px;
+}
